@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# Local design history and review captures are not deployment source.
+/archive/
+/artifacts/

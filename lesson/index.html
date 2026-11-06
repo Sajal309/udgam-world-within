@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#060e17" />
+  <meta name="description" content="Step into a living world and discover the clock inside you. An interactive UDGAM lesson." />
+  <title>UDGAM — A world within</title>
+</head>
+<body>
+  <canvas id="world" aria-label="A continuous 3D journey from a cave into the brain, neural signals and a cell. Use the labeled action buttons to make discoveries."></canvas>
+  <div class="screen-shade" aria-hidden="true"></div>
+  <header>
+    <a class="brand" href="%BASE_URL%lesson/">udgam<span>WORLD WITHIN</span></a>
+    <div class="header-actions"><button id="motion" aria-pressed="false">Pause motion</button><button id="sound" aria-pressed="false">Sound off</button><button id="notes-open">Field guide</button></div>
+  </header>
+  <div class="journey-mark"><span id="chapter-number">01</span><span class="mark-line"></span><span id="chapter-name">THE OUTSIDE WORLD</span></div>
+  <div id="scene-label" aria-hidden="true"><span class="label-line"></span><span id="label-text">YOUR INNER CLOCK</span></div>
+  <button id="hotspot" aria-label="Dim the sunlight"><span class="hotspot-ring" aria-hidden="true"></span><span id="hotspot-label">Touch the sun</span></button>
+  <main id="story" aria-live="polite">
+    <p class="eyebrow" id="story-eyebrow">A SMALL EXPERIMENT. A BIG QUESTION.</p>
+    <h1 id="story-title">What if the sun<br>never came up?</h1>
+    <p id="story-text">Step into the dark. Discover the extraordinary world that keeps time inside you.</p>
+    <div id="result" role="status" hidden></div>
+    <div class="action-row"><button id="action" class="action">Take away the sunlight <span aria-hidden="true">→</span></button><button id="back" class="quiet" hidden>Go back</button></div>
+    <div id="quiz" hidden><button data-answer="stop">It stops completely</button><button data-answer="continues">It keeps its own rhythm</button></div>
+  </main>
+  <div id="discovery" role="status"></div>
+  <footer><div id="trail" aria-label="Journey progress"></div><span id="navigation-hint">DRAG TO LOOK AROUND <i>·</i> SCROLL TO MOVE CLOSER</span><span class="footer-note">AN EXPLORATION OF CIRCADIAN RHYTHMS</span></footer>
+  <div id="transition-label" aria-live="polite"></div>
+  <div id="notice" role="alert"></div>
+  <dialog id="notes">
+    <button id="notes-close" class="dialog-close" aria-label="Close field guide">×</button>
+    <p class="eyebrow">THE EXPLORER’S FIELD GUIDE</p><h2>Follow a question<br>all the way inside.</h2>
+    <p>This learner-paced journey adapts UDGAM’s day-and-night lesson. Each action reveals a consequence: remove daylight, find an ongoing pulse, activate a neural network, and follow a molecular feedback loop.</p>
+    <div id="guide-stops"></div>
+    <details><summary>For teachers: what the model means</summary><p>Circadian rhythms persist without daily light cues, though their timing can drift. The SCN helps coordinate clocks in the body. Gene–protein feedback contributes to biological timing.</p><p>The cave, brain, neurons and cell are an artistic journey across scales. Shapes, signal paths, pulse speeds and protein counts are illustrative. The source’s CLK/PER shorthand simplifies a mechanism involving several molecular partners; this is not an anatomical or biochemical simulation.</p><a href="https://nigms.nih.gov/education/fact-sheets/Pages/circadian-rhythms" target="_blank" rel="noreferrer">Scientific background from NIGMS ↗</a></details>
+    <details id="original-details"><summary>See the original Cavalry animation</summary><video id="original" src="%BASE_URL%lesson/original.mp4" controls playsinline preload="metadata" aria-label="Original UDGAM 45-second animation"></video><p>The original remains here for comparison. The new journey follows the learner’s actions rather than the video’s 45-second timeline.</p><a href="https://www.instagram.com/udgamreads/p/CgHo1tRBLPk/" target="_blank" rel="noreferrer">Original Instagram post ↗</a></details>
+    <p class="credits">Brain asset: Innerscene / MakeHuman, CC0. <a href="%BASE_URL%lesson/ASSET-CREDITS.md" target="_blank">Asset details ↗</a></p>
+    <button id="restart" class="restart">Start the journey again</button>
+  </dialog>
+  <audio id="ambience" src="%BASE_URL%lesson/original.mp4" preload="none" loop></audio>
+  <script type="module" src="/src/lesson/main.js"></script>
+</body>
+</html>

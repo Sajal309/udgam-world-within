@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10141d" />
+    <title>Three.js · Playground</title>
+  </head>
+  <body>
+    <canvas id="scene" aria-label="Interactive 3D object. Drag to orbit and scroll to zoom."></canvas>
+    <header><a href="%BASE_URL%" class="brand">three<span> / </span>playground</a><span class="badge">YOUR NEXT DIMENSION</span></header>
+    <main>
+      <section class="intro"><p class="eyebrow">EXPERIMENT 001</p><h1>A little space.<br />Endless possibilities.</h1><p>Your Three.js canvas is ready.<br />Make something that moves you.</p></section>
+      <section class="panel" aria-label="Scene controls">
+        <div class="panel-title"><span>Scene controls</span><span class="live">● LIVE</span></div>
+        <label for="shape">Geometry</label><select id="shape"><option value="knot">Torus knot</option><option value="sphere">Icosahedron</option><option value="cube">Cube</option></select>
+        <div class="control-row"><label for="color">Surface color</label><input id="color" type="color" value="#b4a0ff" /></div>
+        <label for="speed">Rotation speed <output id="speed-value">0.6×</output></label><input id="speed" type="range" min="0" max="2" step="0.1" value="0.6" />
+        <label class="check"><input id="wireframe" type="checkbox" /> Wireframe</label>
+        <div class="buttons"><button id="pause" type="button">Pause</button><button id="reset" type="button">Reset view</button></div>
+      </section>
+    </main>
+    <footer><span>DRAG TO ORBIT <i>·</i> SCROLL TO EXPLORE</span><span>Built with Three.js + Vite</span></footer>
+    <p id="error" role="alert" hidden></p>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

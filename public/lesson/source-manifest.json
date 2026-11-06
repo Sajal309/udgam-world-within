@@ -1,0 +1,105 @@
+{
+  "sourceProject": "03-complete-post-with-sound.cv",
+  "sourceSha256": "6ee97fb2c6e02002b5a5e5f9143fb04102b8130c2a423ae4473d7822a9177f43",
+  "fps": 24,
+  "duration": 45,
+  "chapters": [
+    {
+      "name": "UDGAM / Pencil 00 / Day and night",
+      "composition": "compNode#9",
+      "start": 0.0,
+      "end": 5.0
+    },
+    {
+      "name": "UDGAM / Pencil 02 / Cave without cues",
+      "composition": "compNode#10",
+      "start": 5.0,
+      "end": 10.0
+    },
+    {
+      "name": "UDGAM / Pencil 03 / When will you",
+      "composition": "compNode#11",
+      "start": 10.0,
+      "end": 15.0
+    },
+    {
+      "name": "UDGAM / Brain Clock / Native Animation 5s",
+      "composition": "compNode#4",
+      "start": 15.0,
+      "end": 20.0
+    },
+    {
+      "name": "UDGAM / Pencil 01 / Regular intervals",
+      "composition": "compNode#5",
+      "start": 20.0,
+      "end": 25.0
+    },
+    {
+      "name": "UDGAM / Pencil 06 / SCN primitive clock",
+      "composition": "compNode#12",
+      "start": 25.0,
+      "end": 30.0
+    },
+    {
+      "name": "UDGAM / Pencil 02 / CLK proteins",
+      "composition": "compNode#6",
+      "start": 30.0,
+      "end": 35.0
+    },
+    {
+      "name": "UDGAM / Pencil 08 / Genes and PER",
+      "composition": "compNode#13",
+      "start": 35.0,
+      "end": 40.0
+    },
+    {
+      "name": "UDGAM / Pencil 03 / PER feedback",
+      "composition": "compNode#7",
+      "start": 40.0,
+      "end": 45.0
+    }
+  ],
+  "adaptation": "Original nine-chapter order retained as lesson provenance. Re-authored as a continuous learner-paced five-discovery world, using an imported CC0 brain model, new 3D environment and interactions, and the original soundtrack as optional ambience. Native animation curves do not execute in the browser.",
+  "interactiveStages": [
+    {
+      "name": "Outside world",
+      "sourceChapters": [
+        1
+      ]
+    },
+    {
+      "name": "Cave",
+      "sourceChapters": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "Neural forest",
+      "sourceChapters": [
+        6
+      ]
+    },
+    {
+      "name": "Cell",
+      "sourceChapters": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "Feedback",
+      "sourceChapters": [
+        9
+      ]
+    }
+  ],
+  "brainAsset": {
+    "file": "brain.glb",
+    "source": "https://www.innerscene.com/tools/library/3d-parts/brain-10d8f88f",
+    "license": "CC0-1.0",
+    "sha256": "f281f4767fc032fbd29011f987e19567f003fe82fa7b5d8e0973c5792a2a30f6"
+  }
+}
